@@ -1,0 +1,15 @@
+package com.selniumframwork.webdriverCmds;
+
+import org.openqa.selenium.WebDriver;
+
+import com.seleniumframeworktest.config.startBrowser;
+
+public class ActionDriver {
+
+	public WebDriver driver;
+	
+	public ActionDriver() {
+		driver = startBrowser.driver;
+	}
+	
+}

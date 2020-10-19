@@ -1,0 +1,20 @@
+package com.seleniumframeworktest.reUse;
+
+import com.seleniumframeworktest.config.startBrowser;
+import com.seleniumframeworktest.objectRepo.LoginPage;
+import com.selniumframwork.webdriverCmds.ActionDriver;
+
+public class commonFunction {
+
+	public ActionDriver aDriver;
+	public commonFunction() {
+		aDriver = new ActionDriver();
+	}
+	public void login() throws Exception {
+		startBrowser.childTest = startBrowser.parentTest.createNode("Login to AtHome");
+		aDriver.navigateToApplication("https://www.athome.com/login/");
+		aDriver.type(LoginPage.textUserName, "nagatraining@gmail.com", "email TextBox");
+		aDriver.type(LoginPage.textPassword, "Sample@1234", "password TextBox");
+		aDriver.click(LoginPage.btnLogin, "login Button");
+	}
+}

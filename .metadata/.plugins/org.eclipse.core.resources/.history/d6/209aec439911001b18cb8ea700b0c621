@@ -1,0 +1,11 @@
+package com.seleniumframeworktest.objectRepo;
+
+import org.openqa.selenium.By;
+
+public class LoginPage {
+	
+	public static By textUserName = By.id("login-form-email");
+	public static By textPassword = By.id("login-form-password");
+	public static By btnLogin = By.className("sign-in btn btn-block btn-primary");
+
+}
