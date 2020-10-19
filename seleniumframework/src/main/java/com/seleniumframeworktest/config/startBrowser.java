@@ -27,11 +27,6 @@ public class startBrowser {
 	public static ExtentTest childTest;
 	ExtentHtmlReporter htmlReporter;
 	
-//	@Test
-//	public void launch() {
-//		driver.get("http://google.com");
-//	}
-	
 	@BeforeTest
 	public void reportGeneration()
 	{

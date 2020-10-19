@@ -4,7 +4,6 @@ INDEX VERSION 1.131+C:\Users\pvnnv\Desktop\Learning\DailyLearning\AapachePOIExce
 2645542148.index
 3269792861.index
 3867266993.index
-95607211.index
 3012847008.index
 2903228988.index
 2123324204.index

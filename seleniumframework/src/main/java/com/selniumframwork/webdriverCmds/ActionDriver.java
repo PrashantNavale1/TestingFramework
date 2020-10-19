@@ -67,7 +67,12 @@ public class ActionDriver {
 			startBrowser.childTest.info(e);
 		}
 	}
-	
+	/**
+	 * used to perform mouseOver action on the page
+	 * @param locator
+	 * @param eleName
+	 * @throws IOException
+	 */
 	public void mouseOver(By locator, String eleName) throws IOException {
 		try {
 			WebElement mo = driver.findElement(locator);
@@ -81,6 +86,10 @@ public class ActionDriver {
 			startBrowser.childTest.info(e);
 		}
 	}
+	/**
+	 * used to take screenshot for failed cases
+	 * @return
+	 */
 	public String screenShot() {
 		return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
 		
